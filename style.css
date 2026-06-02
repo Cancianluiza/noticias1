@@ -48,3 +48,31 @@ header p {
     height: 100%;
     position: relative;
     transform
+
+    .cabecalho {
+    display: flex; /* Ativa o modo Flexbox no container */
+    justify-content: space-between; /* Empurra o título para a esquerda e o menu para a direita */
+    align-items: center; /* Alinha o texto e os links verticalmente no centro */
+    padding: 20px 5%; /* Espaçamento interno para o conteúdo não colar nas bordas da tela */
+    background-color: #24292e; /* Exemplo de cor escura estilo GitHub */
+    color: #ffffff;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 15px; /* Cria um espaçamento uniforme entre os links do menu */
+}
+
+.cabecalho__menu__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.container-cards {
+    display: flex;
+    flex-wrap: wrap; /* Se não couberem na mesma linha, eles quebram para a linha de baixo */
+    justify-content: center; /* Centraliza os cartões na tela */
+    gap: 20px; /* Deixa um espaço maneiro entre os cartões */
+    padding: 40px 20px;
+}
