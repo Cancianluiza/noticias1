@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Fact-Checking - Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Fato ou Fake? 🔍</h1>
+            <p>Clique no card para descobrir a verdade por trás das notícias.</p>
+        </header>
+
+        <div class="card-container" id="card-container">
+            <div class="card" id="card">
+                <div class="card-face card-front">
+                    <div class="badge fake">RUMOR / FAKE</div>
+                    <p class="news-text" id="fake-text">Carregando notícia...</p>
+                    <span class="instruction">Clique para virar 🔄</span>
+                </div>
+                <div class="card-face card-back">
+                    <div class="badge fact">FATO VERDADEIRO</div>
+                    <p class="news-text" id="fact-text">Carregando explicação...</p>
+                    <span class="instruction">Clique para voltar 🔄</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" class="btn">⬅️ Anterior</button>
+            <span id="card-indicator">1 / 1</span>
+            <button id="next-btn" class="btn">Próximo ➡️</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
