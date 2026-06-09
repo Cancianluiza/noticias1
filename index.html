@@ -3,99 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma de Fact-Checking - Flashcards</title>
+    <title>Verificador de Fatos - Notícias</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Fato ou Fake? 🔍</h1>
-            <p>Clique no card para descobrir a verdade por trás das notícias.</p>
-        </header>
-
-        <div class="card-container" id="card-container">
-            <div class="card" id="card">
-                <div class="card-face card-front">
-                    <div class="badge fake">RUMOR / FAKE</div>
-                    <p class="news-text" id="fake-text">Carregando notícia...</p>
-                    <span class="instruction">Clique para virar 🔄</span>
-                </div>
-                <div class="card-face card-back">
-                    <div class="badge fact">FATO VERDADEIRO</div>
-                    <p class="news-text" id="fact-text">Carregando explicação...</p>
-                    <span class="instruction">Clique para voltar 🔄</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="controls">
-            <button id="prev-btn" class="btn">⬅️ Anterior</button>
-            <span id="card-indicator">1 / 1</span>
-            <button id="next-btn" class="btn">Próximo ➡️</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confere Aí - Flashcards</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="cabecalho">
-        <h1 class="cabecalho__titulo">Confere Aí</h1>
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="#">Home</a>
-            <a class="cabecalho__menu__link" href="#">Meus Cards</a>
-        </nav>
+    <header>
+        <h1>Fact-Checking: Verdadeiro ou Falso?</h1>
+        <p>Passe o mouse (ou toque) nos cartões para ver a resposta.</p>
     </header>
 
-    <main class="container-cards">
-
-        <article class="cartao">
-            <div class="cartao__conteudo">
-                <div class="cartao__frente">
-                    <img src="img/html-logo.png" alt="Logo HTML">
-                    <p>O que significa HTML?</p>
+    <main class="container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Cientistas descobrem espécie de polvo que consegue viver fora da água por até uma semana</h2>
                 </div>
-                <div class="cartao__verso">
-                    <p>HyperText Markup Language (Linguagem de Marcação de Hipertexto) - Usado para estruturar a página.</p>
-                </div>
-            </div>
-        </article>
-
-        <article class="cartao">
-            <div class="cartao__conteudo">
-                <div class="cartao__frente">
-                    <img src="img/css-logo.png" alt="Logo CSS">
-                    <p>O que é o Flexbox no CSS?</p>
-                </div>
-                <div class="cartao__verso">
-                    <p>É um modelo de layout unidimensional que facilita o alinhamento e a distribuição de espaço entre elementos.</p>
+                <div class="card-back falso">
+                    <h3>FALSO</h3>
+                    <p>Embora alguns polvos consigam se mover em terra firme por breves períodos entre poças de maré (geralmente poucos minutos), nenhum cefalópode consegue sobreviver fora da água por uma semana. Eles dependem das brânquias para respirar, que precisam estar úmidas para funcionar.</p>
                 </div>
             </div>
-        </article>
+        </div>
 
-        <article class="cartao">
-            <div class="cartao__conteudo">
-                <div class="cartao__frente">
-                    <img src="img/js-logo.png" alt="Logo JavaScript">
-                    <p>Qual a função do JavaScript?</p>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>A Grande Muralha da China é a única estrutura humana visível do espaço a olho nu</h2>
                 </div>
-                <div class="cartao__verso">
-                    <p>Tornar as páginas web dinâmicas e interativas, respondendo a ações do usuário.</p>
+                <div class="card-back falso">
+                    <h3>FALSO</h3>
+                    <p>De acordo com a NASA e astronautas, a muralha é muito estreita e tem cores semelhantes ao solo ao redor, tornando-a extremamente difícil de ver sem lentes de aumento na órbita baixa. Além disso, outras megaestruturas, como cidades iluminadas à noite e grandes represas, são muito mais visíveis.</p>
                 </div>
             </div>
-        </article>
+        </div>
 
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h2>Cientistas conseguiram armazenar dados digitais em cadeias de DNA sintético</h2>
+                </div>
+                <div class="card-back verdadeiro">
+                    <h3>VERDADEIRO</h3>
+                    <p>A tecnologia de armazenamento de dados em DNA é real. Pesquisadores já codificaram textos, imagens e vídeos convertendo os bits (0 e 1) nas bases nitrogenadas do DNA (A, C, T, G). O DNA é extremamente denso e pode conservar informações por milhares de anos se mantido em condições ideais.</p>
+                </div>
+            </div>
+        </div>
     </main>
 
 </body>
